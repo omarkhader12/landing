@@ -10,12 +10,14 @@ body{
 .header  {
     background-color: #fff;
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
     padding: 20px;
 }
 
 .header .logo{
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
     gap: 5px;
 }
@@ -25,9 +27,12 @@ body{
 .header .logo img{
     width: 30px;
 }
-
+.menu{
+    display:none;
+}
 ul{
 display: flex;
+flex-wrap:wrap;
 gap: 9px;
 }
 .active {
@@ -39,6 +44,7 @@ ul li a{
 }
 .auth{
     display: flex;
+    flex-wrap:wrap;
     gap: 10px;
     align-items: center;
     
@@ -57,4 +63,14 @@ ul li a{
     background-color: var(--maincolor);
     padding: 5px 25px;
     border-radius: 15px;
+}
+/* Header responsitive */
+@media screen and (max-width:970px){
+    ul li{
+        display:none;
+    }
+    .menu{
+        display:block;
+        order:2;
+    }
 }

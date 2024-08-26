@@ -128,6 +128,10 @@ gap: 20px;
 .footer-start .logo img{
     width: 30px;
 }
+.footer-start .icons{
+    display: flex;
+    gap:13px;
+}
 .footer-start .icons img{
 border: 1px solid white;
 }

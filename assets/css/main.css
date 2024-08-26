@@ -66,11 +66,24 @@ ul li a{
 }
 /* Header responsitive */
 @media screen and (max-width:970px){
-    ul li{
+    ul li,
+    .auth{
         display:none;
     }
     .menu{
         display:block;
         order:2;
     }
+}
+@media screen and (max-width:530px){
+    .container{
+        width:calc(100% - 23px);       
+    }
+    .header .logo img{
+        width:20px;
+    }
+    .header a{
+        font-size:13px;
+    }
+
 }

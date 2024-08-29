@@ -3,7 +3,7 @@
 body{
 
     font-family: var(--mainfont);   
-    background-color: #eee;
+    background-color: #fff;
     
 }
 /* Header start */
@@ -13,6 +13,7 @@ body{
     flex-wrap:wrap;
     align-items: center;
     padding: 20px 0 20px 0;
+    box-shadow: 0px 8.2371px 8.2371px rgba(0, 0, 0, 0.1);
 }
 
 .logo{
@@ -89,6 +90,146 @@ gap: 9px;
 }
 /*Header end*/
 
+
+/* courses section */
+.courses{
+padding:40px 0;
+margin-left:40px;
+}
+.courses .row{
+    gap:40px;
+}
+.course-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+.course-items,.course-desc{
+    width: calc(( 100% - 40px) /2 );
+}
+.course{
+    width: calc((100% - 20px) / 2);
+    position:relative;
+    color: #fff;
+    background-color: #fff;
+}
+.course-card{
+   position: relative;
+}
+.course-info{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: flex-start;
+}
+.course img{
+    width:100%;
+    filter: brightness(85%);
+}
+.course-info span:first-of-type{
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--maincolor);
+    padding: 10px;
+}
+.course-info span:last-of-type{
+    font-size: 18px;
+    font-weight: 700;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.course-details{
+    padding:15px;
+    box-shadow: 0px 8.2371px 8.2371px rgba(0, 0, 0, 0.1);
+}
+.course-details .row:nth-child(2){
+    justify-content: flex-start;
+
+}
+.course-details h2{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.course-details .details{
+    color: black;
+    font-size: 10px;
+    font-weight: 50px;
+}
+.course-details span{
+    color: var(--maincolor);
+    font-size:12px;
+}
+.courses .row{  
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.course-desc{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 100px;
+}
+
+.course-desc h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.course-desc p:first-of-type{
+    color: var(--maincolor);
+}
+.course-desc p:last-of-type{
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.course-desc a{
+    color: #fff;
+    background-color: var(--maincolor);
+    width: 72px;
+    padding: 5.35px 20.18px 5.35px 20.18px;
+    text-align: center;
+    border-radius: 7px;
+}
+/* course responsive screen */
+
+@media screen and (max-width:1200px){
+   .courses .row{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+   .course-items,.course-desc{
+        width: 100%;
+    }
+    .course-desc{
+        margin-left: 0;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:760px){
+    .courses .row{
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+   .course{
+    width: 100%;
+    }
+    .course-desc{
+        align-items: center;
+    }
+    
+   }
+
 /* testimonial section */
 .testimonials{
     padding: 50px 0;
@@ -113,6 +254,7 @@ gap: 9px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 .user-info{
     display: flex;
@@ -130,6 +272,17 @@ gap: 9px;
     font-size: 10px;
     
     
+}
+.testimonial::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    border-top: 50px solid #F4F4F4;
+    border-right: 50px solid #F4F4F4;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+
 }
 /* responsive testimonial */
 
@@ -187,44 +340,27 @@ gap: 20px;
 .footer-start .icons img{
 border: 1px solid white;
 }
+.icons{
+    display: flex;
+    gap:10px;
+}
 .icons .facebook{
-    width: 20px;
-height: 20px;
-top: 111.2px;
-left: 51.07px;
-gap: 0px;
-opacity: 0px;
-
+    border: solid 1px white;
+    padding: 5px;
 }
 .icons .twitter{
-    width: 20px;
-height: 20px;
-top: 111.2px;
-left: 51.07px;
-gap: 0px;
-opacity: 0px;
-
-
+    border: solid 1px white;
+    padding: 5px;
 }
 .icons .linkedin{
-    width: 20.18px;
-    height: 20.18px;
-    top: 107.5px;
-    left: 85.67px;
-    gap: 0px;
-    border: 0.41px 0px 0px 0px;
-    opacity: 0px;
-    
+    border: solid 1px white;
+    padding: 5px;
 }
 .icons .instagram{
-    width: 20px;
-height: 20px;
-top: 70.2px;
-left: 10.07px;
-gap: 0px;
-opacity: 0px;
-
+    border: solid 1px white;
+    padding: 5px;
 }
+
 .footer-end{
     flex-grow:1;
     display: flex;

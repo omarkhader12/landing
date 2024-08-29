@@ -41,6 +41,12 @@ gap: 9px;
 }
 .navbar ul li a{
     color: #101928;
+    padding:3px;
+    
+}
+.navbar ul li a:hover{
+    background-color: #cbcbcb;
+    border-radius: 90px;
     
 }
 .auth{
@@ -57,6 +63,9 @@ gap: 9px;
     padding: 7px 30px;
     border-radius: 15px;
 }
+.login:hover{
+    background-color: #d9d9e0;
+}
 .register{
     color:#fff;
     font-weight:700;
@@ -64,6 +73,10 @@ gap: 9px;
     background-color: var(--maincolor);
     padding: 5px 25px;
     border-radius: 15px;
+}
+.register:hover{
+        background-color: #564fda;
+    
 }
 /* Header responsitive */
 @media screen and (max-width:970px){
@@ -118,9 +131,16 @@ gap: 9px;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
+    
+}
+.playlogo:hover{
+    background-color: #F0C932;
+    border-radius: 90px;
+    padding: 3px;
 }
 .begins .playlogo a{
     color: #000;
+    
 }
 .begins .playlogo img{
     width: 30px;
@@ -153,7 +173,7 @@ gap: 9px;
     margin:auto;
 }
  .begins .image img{
-    width: 100%;
+    width: 88%;
 }
 
 
@@ -468,8 +488,8 @@ margin-left:40px;
 
 .course-details .details{
     color: black;
-    font-size: 10px;
-    font-weight: 50px;
+    font-size: 14px;
+    
 }
 .course-details span{
     color: var(--maincolor);
@@ -495,8 +515,7 @@ margin-left:40px;
     color: var(--maincolor);
 }
 .course-desc p:last-of-type{
-    font-weight: 200;
-    font-size: 16px;
+    color:#969696;
     margin-top: 50px;
 }
 .course-desc a{
@@ -506,6 +525,13 @@ margin-left:40px;
     padding: 5.35px 20.18px 5.35px 20.18px;
     text-align: center;
     border-radius: 7px;
+}
+.course-desc a:hover{
+    background-color: #564fda;
+}
+
+.course .row .details{
+    color: #969696;
 }
 /* course responsive screen */
 
@@ -545,8 +571,8 @@ margin-left:40px;
     padding: 50px 0;
 }
 .user-info img{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 .testimonials .row{
@@ -579,9 +605,12 @@ margin-left:40px;
 }
 .testimonial span{
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
+    color: #969696;
     
-    
+}
+.testimonial blockquote{
+    color: #969696;
 }
 .testimonial::after{
     content: '';
